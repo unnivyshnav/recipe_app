@@ -1,0 +1,37 @@
+.cuisineTile{
+    transform: translate(0px,70px);
+}
+.cuisneCard{
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+}
+
+.cuisneCard .cuisneImage{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+.cuisneCard .cuisneTitle{
+    font-family: cursive;
+    font-size: 15px;
+    margin: 5px;
+
+}
+
+.cuisneCard .cuisineInfo{
+    color: grey;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.cuisneCard .cuisineInfo span{
+    margin: 0px 10px 0px 5px;
+}
