@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Time, Group } from '../../assets';
 
 function CuisineCard(props) {
@@ -7,14 +8,17 @@ function CuisineCard(props) {
 
     return (
         <div className="cuisineCard">
-            <img src={cuisine.image} alt="cuisine" className="cuisineImage"></img>
-            <h4 className="cuisineTitle">{cuisine.title}</h4>
-            <div className="cuisineInfo">
-                <Time />
-                <span>{cuisine.readyInMinutes}</span>
-                <Group />
-<span>{cuisine.servings}</span>
-            </div>
+            <Link to={{pathname:`/recipe/${cuisine.id}`}}>
+                <img src={cuisine.image} alt="cuisine" className="cuisineImage"></img>
+                <h4 className="cuisineTitle">{cuisine.title}</h4>
+                <div className="cuisineInfo">
+                    <Time />
+                    <span>{cuisine.readyInMinutes}</span>
+                    <Group />
+                    <span>{cuisine.servings}</span>
+                </div>
+            </Link>
+           
         </div>
     )
 }
